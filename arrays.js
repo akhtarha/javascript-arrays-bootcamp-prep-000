@@ -11,7 +11,7 @@ function destructivelyAddElementToBeginningOfArray(arr, elem){
 }
 
 function addELementToEndOfArray(arr, elem){
-  new_arr = [elem, ...arr]
+  var new_arr = [elem, ...arr]
   return new_arr
 }
 
@@ -23,4 +23,9 @@ function destructivelyAddElementToEndOfArray(arr, elem){
 function destructivelyRemoveElementFromBeginningOfArray(arr){
   arr.shift()
   return arr
+}
+
+function removeElementFromBeginningOfArray(arr){
+  var new_arr = arr.slice(0)
+  return new_arr
 }
